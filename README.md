@@ -18,7 +18,7 @@ Recursos: IAM,AMI,EC2,RDS,Snapshot,Security Groups,EBS,Load balancers e S3.
 boto3==1.21.26
 pandas==1.4.2
 openpyxl==3.0.10
-awscli==1.22.81
+awscli==2.11.2
 python-dotenv==0.20.0
 progress==1.6
 ```
