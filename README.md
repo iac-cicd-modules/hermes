@@ -1,5 +1,5 @@
 # Hermes
-![build](https://github.com/chnacib/aws-sdk-hermes/actions/workflows/ci.yml/badge.svg)
+![build](https://github.com/mikaelboto/aws-sdk-hermes/actions/workflows/ci.yml/badge.svg)
 
 Coleta de recursos na aws de forma programática
 
@@ -119,13 +119,13 @@ python3 main.py -a -j
 Para a execução via docker, é necessário ter o awscli instalado na máquina local e configurar as credenciais com o `aws configure`. Após isso, basta utilizar o seguinte comando:
 
 ```
-docker run -it -v "$(pwd):/app/output" -v $HOME/.aws/credentials:/root/.aws/credentials:ro -e PROJ_NAME=XXXXX -e AWS_REGION=us-east-1 chnacib/hermes 
+docker run -it -v "$(pwd):/app/output" -v $HOME/.aws/credentials:/root/.aws/credentials:ro -e PROJ_NAME=XXXXX -e AWS_REGION=us-east-1 mikaelboto/hermes 
 ```
 
 Lembrando que deve ser passado as opções adicionais ao final do comando. Por exemplo:
 
 ```
-docker run -it -v "$(pwd):/app/output" -v $HOME/.aws/credentials:/root/.aws/credentials:ro -e PROJ_NAME=XXXXX -e AWS_REGION=us-east-1 chnacib/hermes --all --join
+docker run -it -v "$(pwd):/app/output" -v $HOME/.aws/credentials:/root/.aws/credentials:ro -e PROJ_NAME=XXXXX -e AWS_REGION=us-east-1 mikaelboto/hermes --all --join
 
 ```
 
